@@ -4,8 +4,6 @@
 
 * Selenium (pip install selenium)
 
-* Browsers: Chrome, Firefox.
-
 * Browser drivers: they are included in the `/resources` folder in the project. Add their path to PATH environment variable.
 
 
