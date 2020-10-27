@@ -2,7 +2,7 @@
 
 * Python 3
 
-* Selenium (pip install selenium)
+* Selenium (`pip install selenium`)
 
 * Browser drivers: they are included in the `/resources` folder in the project. Add their path to PATH environment variable.
 
