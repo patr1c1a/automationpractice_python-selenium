@@ -37,3 +37,8 @@ to the browser line you wish not to use.
 
 > Please note: the `Safari WebDriver` extension is no longer supported on Safari versions under 10. Safari 10+ browser
 >versions are available only for macOS. The driver is now by default shipped with the Mac OS.
+
+
+# Notes
+
+This project was developed using Python 3.8.6 and Selenium 3.141.0
