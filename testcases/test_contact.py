@@ -7,8 +7,11 @@ from pageobjects.contactpage import ContactPage
 
 class TestsContact(unittest.TestCase):
 
+    @classmethod
+    def setUpClass(cls):
+        cls.driver = Driver()
+
     def setUp(self):
-        self.driver = Driver()
         self.driver.navigate(BASE_URL)
 
     def test_contactus_subject_required(self):
@@ -38,8 +41,9 @@ class TestsContact(unittest.TestCase):
         contact_page = ContactPage(self.driver)
         contact_page.verify_message_required()
 
-    def tearDown(self):
-        self.driver.instance.quit()
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.instance.quit()
 
 
 if __name__ == '__main__':

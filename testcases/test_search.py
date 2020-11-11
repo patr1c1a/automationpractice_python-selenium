@@ -7,8 +7,11 @@ from pageobjects.searchresultspage import SearchResults
 
 class TestsSearch(unittest.TestCase):
 
+    @classmethod
+    def setUpClass(cls):
+        cls.driver = Driver()
+
     def setUp(self):
-        self.driver = Driver()
         self.driver.navigate(BASE_URL)
 
     def test_search_results_consistent(self):
@@ -21,8 +24,9 @@ class TestsSearch(unittest.TestCase):
         results = search_page.get_search_results()
         search_page.verify_results_contain_term(results, SEARCH_TERM)
 
-    def tearDown(self):
-        self.driver.instance.quit()
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.instance.quit()
 
 
 if __name__ == '__main__':

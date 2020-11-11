@@ -9,8 +9,11 @@ from pageobjects.searchresultspage import SearchResults
 
 class TestsContact(unittest.TestCase):
 
+    @classmethod
+    def setUpClass(cls):
+        cls.driver = Driver()
+
     def setUp(self):
-        self.driver = Driver()
         self.driver.navigate(BASE_URL)
 
     def test_cart_add_product_from_category_page(self):
@@ -35,8 +38,9 @@ class TestsContact(unittest.TestCase):
         product_page = ProductPage(self.driver)
         product_page.add_to_cart()
 
-    def tearDown(self):
-        self.driver.instance.quit()
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.instance.quit()
 
 
 if __name__ == '__main__':
