@@ -9,20 +9,25 @@
 
 # Run project
 
-In terminal, cd into the project's root folder and execute file `runner.py`:
+In terminal, cd into the project's root folder and execute the following command to execute all tests:
 
-<pre>python runner.py</pre>
+<pre>python -m unittest discover \testcases -v</pre>
+
+To run a specific test file:
+
+<pre>python -m unittest discover \testcases -p "test_addtocart.py" -v</pre>
+
 
 
 ## Run and generate test report
 
-In order to get an html report, instead of using the provided runner, use `pytest`'s runner with html-report:
+In order to get an html report, instead of using `unittest`'s runner, use `pytest`'s runner with html-report option enabled (`report.html` file will be generated in the project root folder):
 
 _(please note: this method requires Pytest (`pip install pytest`) and Pytest Html Report (`pip install pytest-html`)._
 
 <pre>python -m pytest testcases --html=report.html --self-contained-html</pre>
 
-To run a specific file (e.g.: test_search):
+To run a specific test file (e.g.: test_search):
 
 <pre>python -m pytest testcases/test_search.py --html=report.html --self-contained-html</pre>
 
