@@ -9,7 +9,7 @@
 
 # Run project
 
-In terminal, cd into the project's root folder and execute the following command to execute all tests:
+In terminal, cd into the project's root folder and execute the following command to run all tests:
 
 <pre>python -m unittest discover \testcases -v</pre>
 
