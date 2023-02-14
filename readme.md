@@ -2,7 +2,7 @@
 
 * Python 3
 
-* Selenium (`pip install selenium`)
+* Selenium (`pip install selenium==3.141.0`)
 
 * Browser drivers: they are included in the `/resources` folder in the project. Add their path to PATH environment variable.
 
@@ -48,4 +48,4 @@ to the browser line you wish not to use.
 
 This project was developed using Python 3.8.6 and Selenium 3.141.0
 
-Keep in mind that the driver you use must be compatible with the browser installed. If you get an error when running the project, try [downloading an updated version of the driver](https://pypi.org/project/selenium/).
+Keep in mind that the driver you use must be compatible with the browser used for testing. If you get an error when running the project, try [downloading an updated version of the driver](https://pypi.org/project/selenium/).
