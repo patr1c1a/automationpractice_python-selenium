@@ -16,7 +16,7 @@ In terminal, cd into the project's root folder and execute file `runner.py`:
 
 ## Run and generate test report
 
-In order to get an html report, instead of using the provided runner, use `pytest`'s runner with html-report _(this method requires Pytest and Pytest Html Report_:
+In order to get an html report, instead of using the provided runner, use `pytest`'s runner with html-report _(this method requires Pytest and Pytest Html Report packages, included in requirements.txt_):
 
 `python -m pytest testcases --html=report.html --self-contained-html`
 
