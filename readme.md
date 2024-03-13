@@ -4,7 +4,7 @@
 
 * Python 3
 
-* Selenium (run `pip install requirements.txt` to automatically install required packages)
+* Selenium (run `pip install -r requirements.txt` to automatically install required packages)
 
 * Browser drivers: they are included in the `/resources` folder in the project. Add their path to PATH environment variable in your OS.
 
